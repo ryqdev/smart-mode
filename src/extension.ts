@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 
 export async function activate(context: vscode.ExtensionContext) {
     // Force Smart Mode to be off at startup
-    let isSmartModeOn = false;
+    let isSmartModeOn = true;
 
     // Disable all extensions before showing the UI
     await vscode.commands.executeCommand('workbench.extensions.action.disableAll');
