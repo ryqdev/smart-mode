@@ -1,1 +1,1 @@
-# smart-mode
+# smart-mode README
