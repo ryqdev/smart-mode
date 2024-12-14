@@ -1,11 +1,11 @@
 import * as vscode from 'vscode';
 
 export async function activate(context: vscode.ExtensionContext) {
-    // Force Smart Mode to be off at startup
+    // Force Smart Mode to be on at startup
     let isSmartModeOn = true;
 
-    // Disable all extensions before showing the UI
-    await vscode.commands.executeCommand('workbench.extensions.action.disableAll');
+    // Ensure all extensions are enabled at startup
+    // await vscode.commands.executeCommand('workbench.extensions.action.enableAll');
 
     // Create and show the status bar item
     const statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 0);
